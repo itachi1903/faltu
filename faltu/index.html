@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 id="btn">hamza bilal</h1>
+        <ul>
+            <li class="navli li" >home</li>
+            <li class="navli li" >about</li>
+            <li class="navli li" >contact</li>
+            <li class="navli srh"><img src="magnifying-glass.png" alt="search"><input type="text"></li>
+            <li class="navli lgn">login</li>
+            <li class="navli lgn">sign up</li>
+        </ul>
+    </nav>
+    <script>
+         function background(newColor) {
+            document.documentElement.style.setProperty('--backgroundColor', newColor);
+        }
+         function nav(white) {
+            document.documentElement.style.setProperty('--nav', white);
+        }
+         function text(white) {
+            document.documentElement.style.setProperty('--litext', white);
+        }
+        document.getElementById('btn').addEventListener('click', function() {
+            background('black');
+            nav('black');
+            text('white');
+        });
+    </script>
+</body>
+</html>
